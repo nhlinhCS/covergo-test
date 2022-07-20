@@ -1,0 +1,24 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: #f3f3f3;
+
+  &__buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+
+    .button {
+      width: 100px;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}

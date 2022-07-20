@@ -1,0 +1,83 @@
+.filling-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin-top: 50px;
+
+  form {
+    width: 50%;
+  }
+
+  &__inputs {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-item {
+      width: 80%;
+      margin-bottom: 6px;
+
+      label {
+        margin-bottom: 2px;
+        display: block;
+        text-align: left;
+      }
+
+      input, select {
+        width: 100%;
+        height: 32px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  &__package-content {
+    background-color: #f2f2f2;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  &__packages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0 auto;
+
+    &-item {
+      margin-bottom: 6px;
+      
+      label {
+        margin-left: 6px;
+        display: inline-block;
+      }
+    }
+  }
+  
+  &__package-premium {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 32px 0;
+  }
+
+  &__package-buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+
+    .button {
+      width: 100px;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}

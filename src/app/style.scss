@@ -1,0 +1,22 @@
+main {
+  height: 100%;
+}
+
+.button {
+  border-radius: 4px;
+  padding: 6px 12px;
+  min-width: 100px;
+  width: 200px;
+  height: 48px;
+  font-size: 16px;
+}
+.active-button {
+  color: #ffffff;
+  border: none;
+  background-color: #000000;
+}
+
+.back-button {
+  color: #000000;
+  background-color: #ffffff;
+}
