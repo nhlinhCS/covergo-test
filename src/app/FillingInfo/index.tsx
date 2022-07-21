@@ -61,9 +61,7 @@ const FillingInfo: React.FC = () => {
       name,
       country: country?.name,
       insurancePackage:
-        COUNTRY.find(({ symbol }) => {
-          return symbol === insurancePackage;
-        })?.name || "Standard",
+        PACKAGES.find(({ id }) => id === insurancePackage)?.name || "Standard",
       premium,
     });
     setAppScreen(AppScreen.SummaryConfirm);
@@ -93,11 +91,12 @@ const FillingInfo: React.FC = () => {
         <input
           name="package"
           type="radio"
+          id={id}
           value={id}
           checked={id === insurancePackage}
           onChange={handleChangePackage}
         />
-        <label>{`${name}${packageMore}`}</label>
+        <label htmlFor={id}>{`${name}${packageMore}`}</label>
       </div>
     );
   };
